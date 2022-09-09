@@ -9,6 +9,8 @@ body{
     background-size: cover;
     color: #fff;
     font-size: 1.4rem;
+    margin: 0;
+    padding: 8px;
 }
 h1{
     color: goldenrod;
@@ -17,10 +19,10 @@ h1{
     font-style: italic;
 }
 .container{
-    width: 40vw;
+    width: 500px;
     margin: 20px auto;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    padding: 8% 4%;
+    padding: 4% 4%;
 }
 button{
     border: none;
@@ -34,4 +36,12 @@ button{
     width: 20vw;
     cursor: pointer;
     display: inline;
+}
+@media screen and (max-width: 375px) {
+    .container{
+        width: 300px
+    } 
+    button{
+        width: 120px;
+    }
 }
